@@ -1,4 +1,4 @@
-/* Basic Interactivity for AudioPro */
+/* Basic Interactivity for FinePro */
 
 document.addEventListener('DOMContentLoaded', () => {
     
@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile Menu Toggle (Placeholder for future implementation if needed)
-    console.log('AudioPro script loaded.');
+    console.log('FinePro script loaded.');
 });

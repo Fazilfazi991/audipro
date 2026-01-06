@@ -1,4 +1,4 @@
-Perfect — thanks. Below is a **detailed, Cursor-ready PRD** (clean Markdown, structured, copy-paste friendly) for the **AudioPro website**, with **strong emphasis on Repairing & Customization**, **no Case Studies/Portfolio**, **no cart**, and **enquiry-based products**.
+Perfect — thanks. Below is a **detailed, Cursor-ready PRD** (clean Markdown, structured, copy-paste friendly) for the **FinePro website**, with **strong emphasis on Repairing & Customization**, **no Case Studies/Portfolio**, **no cart**, and **enquiry-based products**.
 
 I’ve made reasonable assumptions where you didn’t specify and listed **open questions at the end** (minimal, optional).
 
@@ -6,7 +6,7 @@ I’ve made reasonable assumptions where you didn’t specify and listed **open 
 
 # 📘 Product Requirements Document (PRD)
 
-## Project: **AudioPro Website**
+## Project: **FinePro Website**
 
 ---
 
@@ -14,18 +14,18 @@ I’ve made reasonable assumptions where you didn’t specify and listed **open 
 
 ### Product Name
 
-**AudioPro**
+**FinePro**
 
 ### Purpose
 
-Design and develop a professional, conversion-focused website for AudioPro that highlights **AV Repairing** and **AV Customization** as core services, while also supporting **Rentals** and **Sales** via enquiry-based flows.
+Design and develop a professional, conversion-focused website for FinePro that highlights **AV Repairing** and **AV Customization** as core services, while also supporting **Rentals** and **Sales** via enquiry-based flows.
 
 ### Primary Goal
 
 * Generate **repair requests**
 * Generate **customization enquiries**
 * Enable **product & rental enquiries**
-* Establish AudioPro as a **trusted AV service expert**
+* Establish FinePro as a **trusted AV service expert**
 
 ---
 
@@ -73,7 +73,7 @@ Design and develop a professional, conversion-focused website for AudioPro that 
 
 ```
 Home
-About AudioPro
+About FinePro
 Services
  ├── AV Repairing
  ├── Customization
@@ -118,7 +118,7 @@ Immediately communicate expertise in **Repairing & Customization** and push user
    * Rentals
    * Sales
 
-3. **Why AudioPro**
+3. **Why FinePro**
 
    * Repairs everything (all AV equipment)
    * Skilled technicians
@@ -138,7 +138,7 @@ Immediately communicate expertise in **Repairing & Customization** and push user
 
 ---
 
-## 5.2 About AudioPro
+## 5.2 About FinePro
 
 ### Objective
 
@@ -193,7 +193,7 @@ Convert visitors into repair enquiries.
    3. Testing & Quality Check
    4. Delivery / Pickup
 
-3. Why Choose AudioPro for Repairs
+3. Why Choose FinePro for Repairs
 
    * Experienced technicians
    * Professional tools
@@ -210,7 +210,7 @@ Convert visitors into repair enquiries.
 
 ### Objective
 
-Promote AudioPro as a specialist in tailored AV solutions.
+Promote FinePro as a specialist in tailored AV solutions.
 
 ### Sections
 

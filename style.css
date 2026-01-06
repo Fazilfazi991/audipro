@@ -1,4 +1,4 @@
-/* AudioPro Design System & Global Styles */
+/* FinePro Design System & Global Styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -224,15 +224,16 @@ p {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     letter-spacing: -0.05em;
     display: flex;
     align-items: center;
+    text-transform: lowercase;
 }
 
-.navbar .logo img {
-    /* Background removed as navbar is now black */
+.logo span {
+    font-family: var(--font-family);
 }
 
 /* Hero Section */
@@ -1311,20 +1312,23 @@ footer a:hover {
     background: #000;
 }
 
-.shop-product-card:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+.shop-product-card {
+    background: white;
+    border: none;
+    padding: 0;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .shop-product-img {
-    height: 250px;
+    height: 300px;
     background: #fff;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .shop-product-img img {
@@ -1360,25 +1364,24 @@ footer a:hover {
 }
 
 .shop-product-info {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
-    border-top: 1px solid #f9f9f9;
 }
 
 .product-cat {
-    font-size: 0.8rem;
-    color: #999;
+    font-size: 0.75rem;
+    color: #888;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .shop-product-info h4 {
-    margin: 0 0 0.5rem;
-    font-size: 1rem;
-    color: #111;
-    font-weight: 600;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 700;
 }
 
 .product-price {
