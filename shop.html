@@ -20,7 +20,14 @@
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="services.html" class="nav-link">Services</a>
-                <a href="shop.html" class="nav-link active">Products</a>
+                <div class="dropdown">
+                    <a href="shop.html" class="nav-link active">Products <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="shop.html?category=light">Light</a>
+                        <a href="shop.html?category=sound">Sound</a>
+                        <a href="shop.html?category=accessories">Accessories</a>
+                    </div>
+                </div>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
         </div>
@@ -46,7 +53,7 @@
 
                 <!-- Product 1 -->
                 <!-- Product 1 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="sound">
                     <div class="shop-product-img">
                         <img src="assets/prod_soundbar.png" alt="Antigravity X1 Soundbar">
                     </div>
@@ -57,7 +64,7 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="sound">
                     <div class="shop-product-img">
                         <img src="assets/custom.png" alt="Studio Headphones">
                     </div>
@@ -68,7 +75,7 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="sound">
                     <div class="shop-product-img">
                         <img src="assets/prod_speaker.png" alt="Bluetooth Speaker Mini">
                     </div>
@@ -79,7 +86,7 @@
                 </div>
 
                 <!-- Product 4 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="light">
                     <div class="shop-product-img">
                         <img src="assets/hero.png" alt="LED Display Panel">
                     </div>
@@ -90,7 +97,7 @@
                 </div>
 
                 <!-- Product 5 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="accessories">
                     <div class="shop-product-img">
                         <img src="assets/office.png" alt="HoloQuest VR Headset">
                     </div>
@@ -101,7 +108,7 @@
                 </div>
 
                 <!-- Product 6 -->
-                <div class="shop-product-card">
+                <div class="shop-product-card" data-category="accessories">
                     <div class="shop-product-img">
                         <img src="assets/repair.png" alt="AV Cable Kit">
                     </div>
@@ -149,7 +156,6 @@
                 <p>Shop no -16 - street 16 nakheel road - opposite burj nahar mall Diera, Dubai</p>
                 <p>+971 527388589 | +971 585782244</p>
                 <p><a href="mailto:info@FineProuae.com">info@FineProuae.com</a></p>
-
             </div>
         </div>
         <div class="container"
@@ -166,6 +172,7 @@
         </svg>
     </a>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
