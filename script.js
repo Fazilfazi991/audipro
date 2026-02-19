@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'yamaha-dbr10': {
             title: 'Yamaha DBR10',
             category: 'Sound',
-            image: 'assets/yamaha-dbr10.png',
+            image: 'assets/yamaha-dbr10.PNG',
             description: 'The Yamaha DBR10 is a compact, 700W (peak) 10-inch 2-way active powered loudspeaker designed for portable PA, floor monitoring, and installation. It features FIR-X tuning for high-resolution sound, a 129dB maximum SPL, and a 2-channel mixer with XLR, TRS, and RCA inputs. It is well-regarded for its lightweight (23.2 lbs) build, versatility, and durability.',
             features: [
                 'Audio Quality: Clear, balanced sound, suitable for vocals and acoustic music.',
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'yamaha-mg12xu': {
             title: 'Yamaha MG12XU',
             category: 'Sound',
-            image: 'assets/yamaha-mg12xu.png',
+            image: 'assets/yamaha-mg12xu.PNG',
             description: '12-Channel Mixing Console: Max. 6 Mic / 12 Line Inputs (4 mono + 4 stereo) / 2 GROUP Buses + 1 Stereo Bus / 2 AUX (incl. FX).',
             features: [
                 'Max. 6 Mic / 12 Line Inputs (4 mono + 4 stereo)',
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'shure-blx24uk': {
             title: 'Shure BLX24UK/PG58X-K14',
             category: 'Sound',
-            image: 'assets/shure-blx24uk.png',
+            image: 'assets/shure-blx24uk.PNG',
             description: 'The Shure BLX24/PG58 Wireless Vocal System combines professional-quality sound with simple setup and up to 14 hours battery life for legendary audio performance right out of the box. The system includes BLX4 tabletop single-channel receiver, PG58 handheld transmitter, microphone clip, power supply, 2 AA batteries, and user guide.',
             features: [
                 'SUPERIOR AUDIO - Perform with Confidence',
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'dbx-231s': {
             title: 'DBX 231s',
             category: 'Sound',
-            image: 'assets/dbx-231s.png',
+            image: 'assets/dbx-231s.PNG',
             description: 'When the pros need an EQ, they turn to dbx. With a proven track record that spans four decades, dbx® EQs are the industry standard for touring, studios, and audio installations. The dbx 231s includes two 31-band channels of 1/3-octave equalization, ±12 dB input gain, switchable ±6 dB or ±12 dB boost/cut range, 20mm nonconductive sliders, an intuitive user interface, and output level metering.',
             features: [
                 'Dual 31-band, 1/3-octave Constant Q frequency bands',
