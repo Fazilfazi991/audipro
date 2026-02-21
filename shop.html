@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -24,7 +24,15 @@
                     <a href="shop.html" class="nav-link active">Products <i class="fas fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="shop.html?category=light">Light</a>
-                        <a href="shop.html?category=sound">Sound</a>
+                        <div class="sub-dropdown">
+                            <a href="shop.html?category=sound">Sound <i class="fas fa-caret-right"></i></a>
+                            <div class="sub-dropdown-content">
+                                <a href="shop.html?category=sound&subcategory=speakers">Speakers</a>
+                                <a href="shop.html?category=sound&subcategory=subwoofers">Subwoofers</a>
+                                <a href="shop.html?category=sound&subcategory=mixing-consoles">Mixing Consoles</a>
+                                <a href="shop.html?category=sound&subcategory=microphones">Microphones</a>
+                            </div>
+                        </div>
                         <a href="shop.html?category=accessories">Accessories</a>
                     </div>
                 </div>
@@ -51,22 +59,45 @@
         <div class="container">
             <div class="grid grid-3 product-grid">
 
-
-
                 <!-- New Sound Products -->
-                <div class="shop-product-card" data-category="sound">
+                <!-- RCF Speakers -->
+                <div class="shop-product-card" data-category="sound" data-subcategory="speakers">
+                    <a href="product-details.html?id=rcf-art-910-a">
+                        <div class="shop-product-img">
+                            <img src="assets/rcf-art-910-a.png" alt="RCF - ART 910-A">
+                        </div>
+                        <div class="shop-product-info">
+                            <span class="product-cat">Sound / Speakers</span>
+                            <h4>RCF - ART 910-A</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="shop-product-card" data-category="sound" data-subcategory="speakers">
+                    <a href="product-details.html?id=rcf-nx-910-a">
+                        <div class="shop-product-img">
+                            <img src="assets/rcf-nx-910-a.png" alt="RCF - NX 910-A">
+                        </div>
+                        <div class="shop-product-info">
+                            <span class="product-cat">Sound / Speakers</span>
+                            <h4>RCF - NX 910-A</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="shop-product-card" data-category="sound" data-subcategory="speakers">
                     <a href="product-details.html?id=yamaha-dbr10">
                         <div class="shop-product-img">
                             <img src="assets/yamaha-dbr10.PNG" alt="Yamaha DBR10">
                         </div>
                         <div class="shop-product-info">
-                            <span class="product-cat">Sound</span>
+                            <span class="product-cat">Sound / Speakers</span>
                             <h4>Yamaha DBR10</h4>
                         </div>
                     </a>
                 </div>
 
-                <div class="shop-product-card" data-category="sound">
+                <div class="shop-product-card" data-category="sound" data-subcategory="mixing-consoles">
                     <a href="product-details.html?id=yamaha-mg12xu">
                         <div class="shop-product-img">
                             <img src="assets/yamaha-mg12xu.PNG" alt="Yamaha MG12XU">
@@ -78,7 +109,7 @@
                     </a>
                 </div>
 
-                <div class="shop-product-card" data-category="sound">
+                <div class="shop-product-card" data-category="sound" data-subcategory="microphones">
                     <a href="product-details.html?id=shure-blx24uk">
                         <div class="shop-product-img">
                             <img src="assets/shure-blx24uk.PNG" alt="Shure BLX24UK">
@@ -138,7 +169,7 @@
             </div>
 
             <div class="text-center" style="margin-top: 3rem; color: #666;">
-                Showing 1–6 of 6 results
+                Showing 1–8 of 8 results
             </div>
         </div>
     </section>

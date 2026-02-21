@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Product Filtering Logic
     const urlParams = new URLSearchParams(window.location.search);
     const category = urlParams.get('category');
+    const subcategory = urlParams.get('subcategory');
 
     if (category) {
         const productCards = document.querySelectorAll('.shop-product-card');
@@ -26,7 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         productCards.forEach(card => {
             const cardCategory = card.getAttribute('data-category');
+            const cardSubcategory = card.getAttribute('data-subcategory');
+
+            let show = false;
             if (cardCategory === category) {
+                if (subcategory) {
+                    if (cardSubcategory === subcategory) {
+                        show = true;
+                    }
+                } else {
+                    show = true;
+                }
+            }
+
+            if (show) {
                 card.style.display = 'block';
                 visibleCount++;
             } else {
@@ -37,7 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update results text
         const resultsText = document.querySelector('.text-center');
         if (resultsText) {
-            resultsText.textContent = `Showing ${visibleCount} result${visibleCount !== 1 ? 's' : ''} for "${category.charAt(0).toUpperCase() + category.slice(1)}"`;
+            let label = category.charAt(0).toUpperCase() + category.slice(1);
+            if (subcategory) {
+                label = subcategory.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            }
+            resultsText.textContent = `Showing ${visibleCount} result${visibleCount !== 1 ? 's' : ''} for "${label}"`;
         }
     }
     // Product Data (Extracted from Screenshots)
@@ -108,6 +126,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 'XLR and TRS Inputs and Outputs',
                 'Frequency Response of <10Hz to >50kHz',
                 'Dynamic range of greater than 108dB'
+            ]
+        },
+        'rcf-art-910-a': {
+            title: 'RCF - ART 910-A',
+            category: 'Sound / Speakers',
+            image: 'assets/rcf-art-910-a.png',
+            description: 'ART 910-A is masterfully engineered to deliver stellar audio performance and versatility for intensive audio applications. The combination of a 1.75" compression driver, 10" woofer, two-channel 2100W amplifier, and the constant directivity True Resistive Waveguide produces coherent 100° x 60° coverage for the listening area with up to 130 dB SPL, distortion-free sound. Merging RCF proprietary FiRPHASE and Bass Motion Control (BMC) DSP processing, perfectly tuned for each model, audiences will experience absolute clarity and deep, powerful bass response. The sleek cabinet uses a special polypropylene composite material with an M-brace internal reinforcement, making it easy to carry and secure to install on a pole, flown-, wall-, or truss-mounted using the multiple rigging points available.',
+            features: [
+                'Up to 130 dB Sound Pressure Level',
+                '2100W Class-D Bi-Amplification',
+                '50-20000 Hz linear frequency response',
+                '1.75" Compression Driver',
+                '10" Woofer',
+                'FiRPHASE zero degrees phase technology',
+                'Bass Motion Control woofer excursion management'
+            ]
+        },
+        'rcf-nx-910-a': {
+            title: 'RCF - NX 910-A',
+            category: 'Sound / Speakers',
+            image: 'assets/rcf-nx-910-a.png',
+            description: 'NX 910-A is masterfully engineered from the ground up to deliver stellar audio performance for solo musicians, bands, and DJs. The combination of 1.75" compression driver, 10" woofer, two-channel 2100W amplifier, and a constant directivity waveguide produces coherent 100° x 60° coverage for the listening area with up to 130 dB SPL of distortion-free sound. Used as a stand-alone speaker for a FOH system, satellite (with subwoofer), stage monitor, or flown speaker, the NX 910-A blends high-performance and reliability in a compact package. Blending RCF proprietary FiRPHASE and Bass Motion Control DSP processing, NX 9 Series speakers are perfectly tuned for each model, delivering absolute clarity and deep, powerful bass response. The tour-ready, rugged all-wood cabinet is easy to carry and secure to install on a pole-, flown-, wall-, or truss-mounted using the dedicated rigging points available.',
+            features: [
+                'Up to 130 dB Sound Pressure Level',
+                '2100W Class-D Bi-Amplification',
+                '50-20000 Hz linear frequency response',
+                '1.75" Compression Driver',
+                '10" Woofer',
+                'FiRPHASE zero degrees phase technology',
+                'Bass Motion Control woofer excursion management'
             ]
         }
     };
